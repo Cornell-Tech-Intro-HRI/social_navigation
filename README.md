@@ -8,9 +8,9 @@ Lab 5 - Social Navigation
 In this lab, you will learn how to build a map of the environment, send navigation waypoints to the robot. You will use localization and mapping to enable the robot to locate objects in the environment as it navigates. The Turtlebot 4 platform comes equipped with the ROS2 Navigation Stack which is software that enables robots to autonomously navigate in an environment (see [[Tutorial]](https://turtlebot.github.io/turtlebot4-user-manual/tutorials/generate_map.html) reference).  
 
 The learning outcomes of Lab 5 are:
-- [Create a Social Navigation Node](#Create a Social Navigation Node) 
-- [Create a map](#Create a map) 
-- [Send navigation waypoints to the robot](#Send navigation waypoints to the robot) 
+- [Task 1 - Create a Social Navigation Node](#Task 1 - Create a Social Navigation Node) 
+- [Task 2 - Create a map](#Task 2 - Create a map) 
+- [Task 3 - Send navigation waypoints to the robot](#Task 3 - Send navigation waypoints to the robot) 
 
 ## Prerequisite
 
