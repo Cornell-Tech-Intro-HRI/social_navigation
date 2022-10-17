@@ -20,7 +20,7 @@ cd ~/<ros_workspace>/src/
 git clone https://github.com/Cornell-Tech-Intro-HRI/social_navigation.git 
 ```
 
-## [Create a Social Navigation Node]
+## Task 1 - Create a Social Navigation Node
 
 The goal of this task is to set up a ROS2 workspace with the social_navigation package.
 
