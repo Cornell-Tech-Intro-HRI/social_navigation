@@ -25,6 +25,7 @@ git clone https://github.com/Cornell-Tech-Intro-HRI/social_navigation.git
 The goal of this task is to set up a ROS2 workspace with the social_navigation package.
 
 ### Step 1: Run the Social Navigation package and node
+
 ``` 
 cd ~/<ros_workspace>/src/
 bash social_navigation_node.sh
@@ -56,22 +57,26 @@ bash run_run_social_navigation.sh
 This task involves generating a map of the robot’s environment so that it can avoid colliding into obstacles as it navigates an environment using Simultaneous Localization and Mapping (SLAM). SLAM scans the environment using the Lidar sensor to create a 2D occupancy grid that records the locations of objects.
 
 ### Step 1: Launch RPLIDAR nodes. Open a terminal and run:
+
 ```
 ros2 launch turtlebot4_bringup oakd.launch.py 
 ```
+
 ### Step 2: Launch SLAM
 
 SLAM relies on RPLIDAR nodes to map an environment as a 2D occupancy grid. Launch the RPLIDAR and description nodes and run SLAM on the robot. Open a terminal and run:
 ```
 ros2 launch turtlebot4_navigation slam_sync.launch.py
 ```
+
 ### Step 3: Launch RVIZ
 
 Visualize the 2D map in RVIZ using the view_robot launch file. Open a terminal and run:
 ```
 ros2 launch turtlebot4_viz view_robot.launch.py
 ```
-### Step 4: Drive the robot to scan the room using RPLIDAR. 
+
+### Step 4: Scan the room using RPLIDAR. 
 
 Drive the robot around the environment to scan it with the Lidar sensor to generate a 2D occupancy grid. The robot can be operated using teleop or driving the robot with the remote controller. Open a terminal and run:
 
@@ -100,6 +105,7 @@ cd ~<ros_workspace>/
 ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "name: data: 'map_name'"
 ls
 ```
+
 ### Step 5: View the map. 
 
 Save the map generates 'map_name.pgm’ and 'map_name.yaml' files. Open the .pgm file to confirm that your map looks correct.
@@ -118,15 +124,17 @@ Open a terminal and run this command using your .yaml file from Task 1. Open a t
 ```
 ros2 launch turtlebot4_navigation nav_bringup.launch.py slam:=off localization:=true map:=tata_251.yaml
 ```
-### Step 2: Launch RViz to collect (x, y) waypoints for the robot to navigate through. 
 
-Open a terminal and run:
+### Step 2: Launch RViz to collect poses.
+
+Launch RViz to collect (x, y) waypoints for the robot to navigate through. Open a terminal and run:
 ```
 ros2 launch turtlebot4_viz view_robot.launch.py
 ```
-### Step 3: Collect 2D waypoints for your robot to navigate through using the 2D Pose Estimate tool.
 
-Open a terminal and echo the /clicked_point topic:
+### Step 3: Collect 2D waypoints. 
+
+Collect 2D waypoints for the tutlebot to navigate through using the 2D Pose Estimate tool. Open a terminal and echo the /clicked_point topic:
 ```
 ros2 topic echo /clicked_point
 ```
