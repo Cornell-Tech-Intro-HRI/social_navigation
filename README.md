@@ -47,12 +47,14 @@ bash social_navigation_node.sh
 			/social_navigation_node
 				/social_navigation_node
 
-### Step 4: Place the run_social_navigation.sh file in the ~/ros_workspace/ directory, open a terminal, and run the social_navigation node. Open a terminal and run:
+### Step 4: Run the social_navigation node. Open a terminal and run:
 
 ```
 cd ~/<ros_workspace>/ 
 bash run_run_social_navigation.sh
 ```
+
+## Task 2 - Create a map
 
 This task involves generating a map of the robot’s environment so that it can avoid colliding into obstacles as it navigates an environment using Simultaneous Localization and Mapping (SLAM). SLAM scans the environment using the Lidar sensor to create a 2D occupancy grid that records the locations of objects.
 
@@ -104,8 +106,6 @@ ls
 ### Step 5: View the map. 
 
 Save the map generates 'map_name.pgm’ and 'map_name.yaml' files. Open the .pgm file to confirm that your map looks correct.
-
-## Task 2 - Create a map
 
 ## Task 3 - Send navigation waypoints to the robot
 
