@@ -41,11 +41,15 @@ bash social_navigation_node.sh
 
 ### Step 3: Place social_navigation_node.py file in the following directory:
 
-~/<ros_workspace>/
-	/src
-		/social_navigation_pkg
-			/social_navigation_node
-				/social_navigation_node
+- ~/<ros_workspace>/
+	- /src
+		- /social_navigation_pkg
+            - setup.cfg
+            - setup.py
+            - package.xml
+			- /social_navigation_node
+				- /social_navigation_node
+                    - social_navigation_node.py
 
 ### Step 4: Run the social_navigation node. Open a terminal and run:
 
