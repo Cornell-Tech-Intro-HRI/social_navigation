@@ -12,15 +12,19 @@ The learning outcomes of Lab 5 are:
 - [Create a map](#Create a map) 
 - [Send navigation waypoints to the robot](#Send navigation waypoints to the robot) 
 
-## Task 1 - Create a Social Navigation Node
+## Prerequisite
 
-### Download Social Navigation package: 
+Download Social Navigation package
 ``` 
 cd ~/<ros_workspace>/src/
 git clone https://github.com/Cornell-Tech-Intro-HRI/social_navigation.git 
 ```
 
-### Step 1: Run it to create a Social Navigation package and node
+## Task 1 - Create a Social Navigation Node
+
+The goal of this task is to set up a ROS2 workspace with the social_navigation package.
+
+### Step 1: Run the Social Navigation package and node
 ``` 
 cd ~/<ros_workspace>/src/
 bash social_navigation_node.sh
@@ -39,20 +43,9 @@ bash social_navigation_node.sh
 <depend>std_msgs</depend>
 ```
 
-### Step 3: Place social_navigation_node.py file in the following directory:
+### Step 3: Run the social_navigation node. 
 
-- ~/<ros_workspace>/
-	- /src
-		- /social_navigation_pkg
-            - setup.cfg
-            - setup.py
-            - package.xml
-			- /social_navigation_node
-				- /social_navigation_node
-                    - social_navigation_node.py
-
-### Step 4: Run the social_navigation node. Open a terminal and run:
-
+Open a terminal and run:
 ```
 cd ~/<ros_workspace>/ 
 bash run_run_social_navigation.sh
@@ -125,7 +118,9 @@ Open a terminal and run this command using your .yaml file from Task 1. Open a t
 ```
 ros2 launch turtlebot4_navigation nav_bringup.launch.py slam:=off localization:=true map:=tata_251.yaml
 ```
-### Step 2: Launch RViz to collect (x, y) waypoints for the robot to navigate through. Open a terminal and run:
+### Step 2: Launch RViz to collect (x, y) waypoints for the robot to navigate through. 
+
+Open a terminal and run:
 ```
 ros2 launch turtlebot4_viz view_robot.launch.py
 ```
