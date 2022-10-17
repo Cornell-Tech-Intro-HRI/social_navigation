@@ -8,7 +8,7 @@ Lab 5 - Social Navigation
 In this lab, you will learn how to build a map of the environment, send navigation waypoints to the robot. You will use localization and mapping to enable the robot to locate objects in the environment as it navigates. The Turtlebot 4 platform comes equipped with the ROS2 Navigation Stack which is software that enables robots to autonomously navigate in an environment (see [Tutorial](https://turtlebot.github.io/turtlebot4-user-manual/tutorials/generate_map.html) reference).  
 
 The learning outcomes of Lab 5 are:
-- [Task 1 - Create a Social Navigation Node](#Task-1-Create-a-Social-Navigation-Node) 
+- [Task 1 - Create a Social Navigation Node](#Create-a-Social-Navigation-Node) 
 - [Task 2 - Create a map](#Task_2_Create_a_map) 
 - [Task 3 - Send navigation waypoints to the robot](#Task_3_Send_navigation_waypoints_to_the_robot) 
 
@@ -20,7 +20,7 @@ cd ~/<ros_workspace>/src/
 git clone https://github.com/Cornell-Tech-Intro-HRI/social_navigation.git 
 ```
 
-## [Task 1 - Create a Social Navigation Node]
+## [Create a Social Navigation Node]
 
 The goal of this task is to set up a ROS2 workspace with the social_navigation package.
 
