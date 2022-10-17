@@ -98,7 +98,7 @@ Remote Controller:
 ros2 launch turtlebot4_bringup joy_teleop.launch.py
 ```
 
-###Step 5: Save the map. 
+### Step 5: Save the map. 
 
 After building the map, save it to your ROS workspace. Open a terminal, navigate to your ROS workspace, and save the map (replace 'map_name' with your desired filename e.g., ‘tata_251’). Lastly, confirm that the map has been saved in the last step below by confirming your map is in the current directory. Open a terminal and run:
 
