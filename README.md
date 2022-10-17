@@ -106,7 +106,7 @@ ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "name: data: '
 ls
 ```
 
-### Step 5: View the map. 
+### Step 6: View the map. 
 
 Save the map generates 'map_name.pgm’ and 'map_name.yaml' files. Open the .pgm file to confirm that your map looks correct.
 
