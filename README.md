@@ -39,6 +39,72 @@ bash social_navigation_node.sh
 <depend>std_msgs</depend>
 ```
 
+### Step 3: Place social_navigation_node.py file in the following directory:
+
+~/<ros_workspace>/
+	/src
+		/social_navigation_pkg
+			/social_navigation_node
+				/social_navigation_node
+
+### Step 4: Place the run_social_navigation.sh file in the ~/ros_workspace/ directory, open a terminal, and run the social_navigation node. Open a terminal and run:
+
+```
+cd ~/<ros_workspace>/ 
+bash run_run_social_navigation.sh
+```
+
+This task involves generating a map of the robot’s environment so that it can avoid colliding into obstacles as it navigates an environment using Simultaneous Localization and Mapping (SLAM). SLAM scans the environment using the Lidar sensor to create a 2D occupancy grid that records the locations of objects.
+
+### Step 1: Launch RPLIDAR nodes. Open a terminal and run:
+```
+ros2 launch turtlebot4_bringup oakd.launch.py 
+```
+### Step 2: Launch SLAM
+
+SLAM relies on RPLIDAR nodes to map an environment as a 2D occupancy grid. Launch the RPLIDAR and description nodes and run SLAM on the robot. Open a terminal and run:
+```
+ros2 launch turtlebot4_navigation slam_sync.launch.py
+```
+### Step 3: Launch RVIZ
+
+Visualize the 2D map in RVIZ using the view_robot launch file. Open a terminal and run:
+```
+ros2 launch turtlebot4_viz view_robot.launch.py
+```
+### Step 4: Drive the robot to scan the room using RPLIDAR. 
+
+Drive the robot around the environment to scan it with the Lidar sensor to generate a 2D occupancy grid. The robot can be operated using teleop or driving the robot with the remote controller. Open a terminal and run:
+
+Teleop:
+```
+sudo apt update 
+sudo apt install ros-galactic-teleop-twist-keyboard
+source /opt/ros/galactic/setup.bash 
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+<p align="center"> 
+<img src="images/teleop.png" width=860></img> 
+</p>
+
+Remote Controller:
+```
+ros2 launch turtlebot4_bringup joy_teleop.launch.py
+```
+
+###Step 5: Save the map. 
+
+After building the map, save it to your ROS workspace. Open a terminal, navigate to your ROS workspace, and save the map (replace 'map_name' with your desired filename e.g., ‘tata_251’). Lastly, confirm that the map has been saved in the last step below by confirming your map is in the current directory. Open a terminal and run:
+
+```
+cd ~<ros_workspace>/
+ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "name: data: 'map_name'"
+ls
+```
+### Step 6: View the map. 
+
+Save the map generates 'map_name.pgm’ and 'map_name.yaml' files. Open the .pgm file to confirm that your map looks correct.
+
 ## Task 2 - Create a map
 
 ## Task 3 - Send navigation waypoints to the robot
