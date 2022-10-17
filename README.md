@@ -48,7 +48,7 @@ bash social_navigation_node.sh
 
 Open a terminal and run:
 ```
-cd ~/<ros_workspace>/ 
+cd ~/<ros_workspace>/
 bash run_run_social_navigation.sh
 ```
 
@@ -101,7 +101,7 @@ ros2 launch turtlebot4_bringup joy_teleop.launch.py
 After building the map, save it to your ROS workspace. Open a terminal, navigate to your ROS workspace, and save the map (replace 'map_name' with your desired filename e.g., ‘tata_251’). Lastly, confirm that the map has been saved in the last step below by confirming your map is in the current directory. Open a terminal and run:
 
 ```
-cd ~<ros_workspace>/
+cd ~/<ros_workspace>/
 ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "name: data: 'map_name'"
 ls
 ```
