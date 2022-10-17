@@ -9,7 +9,7 @@ In this lab, you will learn how to build a map of the environment, send navigati
 
 The learning outcomes of Lab 5 are:
 - [Task 1 - Create a Social Navigation Node](#Task-1---Create-a-Social-Navigation-Node) 
-- [Task 2 - Create a map](#Task-2---Create_a_map) 
+- [Task 2 - Create a map](#Task-2---Create-a-map) 
 - [Task 3 - Send navigation waypoints to the robot](#Task-3---Send-navigation-waypoints-to-the-robot) 
 
 ## Prerequisite
