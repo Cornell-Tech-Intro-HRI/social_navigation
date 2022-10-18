@@ -20,6 +20,12 @@ cd ~/<ros_workspace>/src/
 git clone https://github.com/Cornell-Tech-Intro-HRI/social_navigation.git 
 ```
 
+Move bash files to ~/<ros_workspace>/ directory
+```
+cd ~/<ros_workspace>/src/social_navigation
+mv run_social_navigation.sh ~/<ros_workspace>/
+```
+
 ## Task 1 - Create a Social Navigation Node
 
 The goal of this task is to set up a ROS2 workspace with the social_navigation package.
@@ -49,7 +55,7 @@ bash social_navigation_node.sh
 Open a terminal and run:
 ```
 cd ~/<ros_workspace>/
-bash run_run_social_navigation.sh
+bash run_social_navigation.sh
 ```
 
 ## Task 2 - Create a map
