@@ -86,13 +86,13 @@ Open a terminal and run this command using your .yaml file from Task 1. Open a n
 ros2 launch turtlebot4_navigation nav_bringup.launch.py slam:=off localization:=true map:=tata_251.yaml
 ```
 
-### Step 2: (Run locally) Collect waypoints
+### Step 2: (Run locally) Launch RViz
 
 Launch RViz to collect (x, y) waypoints for the robot to navigate through. Open a terminal and run:
 ```
 ros2 launch turtlebot4_viz view_robot.launch.py
 ```
-### Step 3: (Run locally) 
+### Step 3: (Run locally) Collect waypoints
 
 Collect 2D waypoints for your robot to navigate through using the 2D Pose Estimate tool.
 
