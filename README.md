@@ -25,7 +25,7 @@ ros2 launch turtlebot4_bringup oakd.launch.py
 ### Step 1: (Run on Pi) Launch SLAM on Raspberry Pi.
 
 SLAM relies on RPLIDAR nodes to map an environment as a 2D occupancy grid. Launch the RPLIDAR and description nodes and run SLAM on the robot. Open a new terminal and run:
-	```
+```
 ssh ubuntu@TURTLEBOT#_IP_ADDRESS
 ros2 launch turtlebot4_navigation slam_sync.launch.py
 ```
