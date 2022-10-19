@@ -14,13 +14,13 @@ The learning outcomes of Lab 5 are:
 
 ## Prerequisite
 
-Download Social Navigation package
+### Step 1: Download Social Navigation package
 ``` 
-cd ~/<ros_workspace>/src/
+cd ~/<ros_workspace>/
 git clone https://github.com/Cornell-Tech-Intro-HRI/social_navigation.git 
 ```
 
-Move bash files to ~/<ros_workspace>/ directory
+### Step 2: Move bash file to ~/<ros_workspace>/ directory
 ```
 cd ~/<ros_workspace>/src/social_navigation
 mv run_social_navigation.sh ~/<ros_workspace>/
@@ -42,13 +42,6 @@ bash social_navigation_node.sh
 - Maintainer - Enter group member names
 - Maintainer Email - Email one email address from the student group members
 - Description - Add a brief description of the proxemic detector package
-- Under ‘<test_depend>’ add these lines: 
-
-```
-<depend>rclpy</depend>
-<depend>geometry_msgs</depend>
-<depend>std_msgs</depend>
-```
 
 ### Step 3: Run the social_navigation node. 
 
