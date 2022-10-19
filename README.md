@@ -141,4 +141,4 @@ Checkpoint 3: Your task is to test your node to ensure it achieves the desired b
 
 ## Further Issues and questions ❓ 
 
-If you have issues or questions, don't hesitate to contact [Angelique Taylor](https://www.angeliquemtaylor.com/) at amt298@cornell.edu.
+If you have issues or questions, don't hesitate to contact [Angelique Taylor](https://www.angeliquemtaylor.com/) at amt298@cornell.edu or [Tauhid Tanjim](https://tanjim13.github.io/tauhidtanjim/) at tt485@cornell.edu.
