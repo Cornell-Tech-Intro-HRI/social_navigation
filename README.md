@@ -11,7 +11,7 @@ The learning outcomes of Lab 5 are:
 - [Task 1 - Create a map](#Task-1---Create-a-map) 
 - [Task 2 - Send navigation waypoints to the robot](#Task-2---Send-navigation-waypoints-to-the-robot) 
 - [Task 3 - Create a Social Navigation Node](#Task-3---Create-a-Social-Navigation-Node) 
-- [Task 4 - Test Social Navigation Node](#Task-4---Test-Social-Navigation-Node-on-the-Turtlebot) 
+- [Task 4 - Test Social Navigation Node on the Turtlebot](#Task-4---Test-Social-Navigation-Node-on-the-Turtlebot) 
 
 ## Task 1 - Create a map
 
@@ -114,6 +114,12 @@ Description - Add a brief description of the proxemic detector package
 bash ~/<ros_workspace>/run_social_navigation.sh
 ```
 Checkpoint 2: Zip and submit your final social_navigation_pkg folder.
+
+## Task 4: Test Social Navigation Node on the Turtlebot 
+
+The social navigation node is expected to enter the docking station, approach two waypoints, and navigate back to the docking station.
+
+Checkpoint 3: Your task is to test your node to ensure it achieves the desired behavior and record a video of the robot. 
 
 ## Further Issues and questions ❓ 
 
