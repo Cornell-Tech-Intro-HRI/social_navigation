@@ -133,7 +133,7 @@ bash ~/<ros_workspace>/run_social_navigation.sh
 ```
 Checkpoint 2: Zip and submit your final social_navigation_pkg folder.
 
-## Task 4: Test Social Navigation Node on the Turtlebot 
+## Task 4 - Test Social Navigation Node on the Turtlebot 
 
 The social navigation node is expected to enter the docking station, approach two waypoints, and navigate back to the docking station.
 
