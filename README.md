@@ -24,7 +24,7 @@ SSH into the Raspberry Pi and launch RPLIDAR nodes. Open a new terminal and run:
 ssh ubuntu@TURTLEBOT#_IP_ADDRESS
 ros2 launch turtlebot4_bringup oakd.launch.py 
 ```
-### Step 1: (Run on Pi) Launch SLAM on Raspberry Pi.
+### Step 1: (Run on Pi) Launch SLAM on Raspberry Pi
 
 SLAM relies on RPLIDAR nodes to map an environment as a 2D occupancy grid. Launch the RPLIDAR and description nodes and run SLAM on the robot. Open a new terminal and run:
 ```
@@ -55,7 +55,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ros2 launch turtlebot4_bringup joy_teleop.launch.py
 ```
 
-### Step 4: (Run locally) Save the map. 
+### Step 4: (Run locally) Save the map
 
 After building the map, save it to your ROS workspace. Open a terminal, navigate to your ROS workspace, and save the map (replace 'map_name' with your desired filename e.g., ‘tata_251_group#’). Lastly, confirm that the map has been saved in the last step below by confirming your map is in the current directory. Open a terminal and run:
 ```
@@ -64,7 +64,7 @@ ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "name: data: '
 ls
 ```
 
-### Step 5: (View locally) View the map. 
+### Step 5: (View locally) View the map
 
 Saving the map generates 'map_name.pgm’ and 'map_name.yaml' files. Open the .pgm file to confirm that your map looks correct.
 
@@ -79,7 +79,7 @@ The goal of this task is to design a delivery robot that navigates from the foll
 - Waypoint 2
 - Docking station
 
-### Step 1: (Run locally) Load the new map into ROS2 Navigation Stack. 
+### Step 1: (Run locally) Load the new map into ROS2 Navigation Stack
 
 Open a terminal and run this command using your .yaml file from Task 1. Open a new terminal and run:
 ```
@@ -123,7 +123,7 @@ Maintainer - Enter group member names
 Maintainer Email - Email one email address from the student group members
 Description - Add a brief description of the proxemic detector package
 
-### Step 3: Set waypoints. 
+### Step 3: Set waypoints
 
 Enter the two (x,y) waypoints you recorded in Task 1 on lines 25 and 26 of social_navigation_node.py file.
 
