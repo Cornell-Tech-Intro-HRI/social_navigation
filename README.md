@@ -47,7 +47,7 @@ bash social_navigation_node.sh
 
 Open a terminal and run:
 ```
-cd ~/<ros_workspace>/
+cd ~/<ros_workspace>/src/
 bash run_social_navigation.sh
 ```
 
