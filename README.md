@@ -16,7 +16,7 @@ The learning outcomes of Lab 5 are:
 
 ### Step 1: Download Social Navigation package
 ``` 
-cd ~/<ros_workspace>/
+cd ~/<ros_workspace>/src/
 git clone https://github.com/Cornell-Tech-Intro-HRI/social_navigation.git 
 ```
 
