@@ -17,7 +17,9 @@ The learning outcomes of Lab 5 are:
 
 This task involves generating a map of the robot’s environment so that it can avoid colliding into obstacles as it navigates an environment using Simultaneous Localization and Mapping (SLAM). SLAM scans the environment using the Lidar sensor to create a 2D occupancy grid that records the locations of objects.
 
-### Step 0 (Optional if lidar not on): (Run on Pi) SSH into the Raspberry Pi and launch RPLIDAR nodes. Open a new terminal and run:
+### Step 0 (Optional if lidar not on): (Run on Pi) Launch Lidar
+
+SSH into the Raspberry Pi and launch RPLIDAR nodes. Open a new terminal and run:
 ```
 ssh ubuntu@TURTLEBOT#_IP_ADDRESS
 ros2 launch turtlebot4_bringup oakd.launch.py 
@@ -36,7 +38,9 @@ Visualize the 2D map in RVIZ using the view_robot launch file. Open a terminal a
 ros2 launch turtlebot4_viz view_robot.launch.py
 ```
 
-### Step 3: (Run locally) Drive the robot to scan the room using RPLIDAR. Drive the robot around the Tata 251 to scan it with the Lidar sensor to generate a 2D occupancy grid. The robot can be operated using teleop or driving the robot with the remote controller. Open a terminal and run:
+### Step 3: (Run locally) Scan Tata 251 room
+
+Drive the robot to scan the room using RPLIDAR. Drive the robot around the Tata 251 to scan it with the Lidar sensor to generate a 2D occupancy grid. The robot can be operated using teleop or driving the robot with the remote controller. Open a terminal and run:
 
 ### Teleop:
 ```
@@ -51,14 +55,18 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ros2 launch turtlebot4_bringup joy_teleop.launch.py
 ```
 
-### Step 4: (Run locally) Save the map. After building the map, save it to your ROS workspace. Open a terminal, navigate to your ROS workspace, and save the map (replace 'map_name' with your desired filename e.g., ‘tata_251_group#’). Lastly, confirm that the map has been saved in the last step below by confirming your map is in the current directory. Open a terminal and run:
+### Step 4: (Run locally) Save the map. 
+
+After building the map, save it to your ROS workspace. Open a terminal, navigate to your ROS workspace, and save the map (replace 'map_name' with your desired filename e.g., ‘tata_251_group#’). Lastly, confirm that the map has been saved in the last step below by confirming your map is in the current directory. Open a terminal and run:
 ```
 cd ~<ros_workspace>/
 ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "name: data: 'map_name'"
 ls
 ```
 
-### Step 5: (View locally) View the map. Saving the map generates 'map_name.pgm’ and 'map_name.yaml' files. Open the .pgm file to confirm that your map looks correct.
+### Step 5: (View locally) View the map. 
+
+Saving the map generates 'map_name.pgm’ and 'map_name.yaml' files. Open the .pgm file to confirm that your map looks correct.
 
 Checkpoint 1: Provide the .pgm and .yaml files generated from your robot. 
 
@@ -71,16 +79,22 @@ The goal of this task is to design a delivery robot that navigates from the foll
 - Waypoint 2
 - Docking station
 
-### Step 1: (Run locally) Load the new map into ROS2 Navigation Stack. Open a terminal and run this command using your .yaml file from Task 1. Open a new terminal and run:
+### Step 1: (Run locally) Load the new map into ROS2 Navigation Stack. 
+
+Open a terminal and run this command using your .yaml file from Task 1. Open a new terminal and run:
 ```
 ros2 launch turtlebot4_navigation nav_bringup.launch.py slam:=off localization:=true map:=tata_251.yaml
 ```
 
-### Step 2: (Run locally) Launch RViz to collect (x, y) waypoints for the robot to navigate through. Open a terminal and run:
+### Step 2: (Run locally) Collect waypoints
+
+Launch RViz to collect (x, y) waypoints for the robot to navigate through. Open a terminal and run:
 ```
 ros2 launch turtlebot4_viz view_robot.launch.py
 ```
-### Step 3: (Run locally) Collect 2D waypoints for your robot to navigate through using the 2D Pose Estimate tool.
+### Step 3: (Run locally) 
+
+Collect 2D waypoints for your robot to navigate through using the 2D Pose Estimate tool.
 
 Open a terminal and echo the /clicked_point topic:
 ```
@@ -94,7 +108,9 @@ No Checkpoint.
 
 The goal of this task is to set up a ROS2 workspace with the social_navigation package.
 
-### Step 1: (Run locally) Clone the Social Navigation node from Github into the ~/<ros_workspace>/src directory and move the bash scripts to the ~/<ros_workspace>/ directory. Open a terminal and run:
+### Step 1: (Run locally) Clone the Social Navigation node 
+
+Clone the code from Github into the ~/<ros_workspace>/src directory and move the bash scripts to the ~/<ros_workspace>/ directory. Open a terminal and run:
 ```
 cd ~/<ros_workspace>/src
 git clone https://github.com/Cornell-Tech-Intro-HRI/social_navigation
@@ -107,7 +123,9 @@ Maintainer - Enter group member names
 Maintainer Email - Email one email address from the student group members
 Description - Add a brief description of the proxemic detector package
 
-### Step 3: Set waypoints. Enter the two (x,y) waypoints you recorded in Task 1 on lines 25 and 26 of social_navigation_node.py file.
+### Step 3: Set waypoints. 
+
+Enter the two (x,y) waypoints you recorded in Task 1 on lines 25 and 26 of social_navigation_node.py file.
 
 ### Step 4: Run the social_navigation node. Open a terminal and run:
 ```
