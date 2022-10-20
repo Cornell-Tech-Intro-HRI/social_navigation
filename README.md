@@ -102,6 +102,11 @@ ros2 topic echo /clicked_point
 ```
 Click on the ‘Publish Point’ button and then click on the desired waypoint on the map and record the x and y coordinates for 2 waypoints (used in next step).
 
+<p align="center"> 
+<img src="images/clicked_point.gif" width=460></img> 
+</p>
+Figure: this shows an example of collecting (x,y) locations from RViz using the ‘Publish Point’ button and clicking on the point as it echoes the point information in a separate terminal.
+
 No Checkpoint.
 
 ## Task 3 - Create a Social Navigation Node
