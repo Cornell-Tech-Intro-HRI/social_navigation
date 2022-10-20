@@ -3,8 +3,8 @@
 <package format="3">
   <name>social_navigation_pkg</name>
   <version>0.0.0</version>
-  <description>Social Navigation package that enables a robot to move through a series of waypoints</description>
-  <maintainer email="amt298@cornell.edu">demo</maintainer>
+  <description>Add DEscription</description>
+  <maintainer email="xxxxxx@cornell.edu">demo</maintainer>
   <license>No License to declare</license>
 
   <test_depend>ament_copyright</test_depend>
@@ -15,7 +15,6 @@
   <depend>rclpy</depend>
   <depend>geometry_msgs</depend>
   <depend>std_msgs</depend>
-
 
   <export>
     <build_type>ament_python</build_type>

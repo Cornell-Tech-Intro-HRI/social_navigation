@@ -22,7 +22,7 @@ This task involves generating a map of the robot’s environment so that it can 
 SSH into the Raspberry Pi and launch RPLIDAR nodes. Open a new terminal and run:
 ```
 ssh ubuntu@TURTLEBOT#_IP_ADDRESS
-ros2 launch turtlebot4_bringup oakd.launch.py 
+ros2 launch turtlebot4_bringup rplidar.launch.py 
 ```
 ### Step 1: (Run on Pi) Launch SLAM on Raspberry Pi
 
