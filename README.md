@@ -71,7 +71,7 @@ Saving the map generates 'map_name.pgm’ and 'map_name.yaml' files. Open the .p
 Checkpoint 1: Provide the .pgm and .yaml files generated from your robot. 
 
 <p align="center"> 
-<img src="images/tata_251.png" width=300></img> <img src="images/tata_251_yml.png" width=300></img> 
+<img src="images/tata_251.png" width=300></img> <img src="images/tata_251_yml.png" width=400></img> 
 </p>
 Figure: Example Tata 251 ‘.pgm’ (left) and ‘.yml’ (right) files for the map.
 
